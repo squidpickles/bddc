@@ -14,7 +14,7 @@ static NSString *pathToNSUpdate = @"/usr/bin/nsupdate";
     [NSDictionary dictionaryWithObjectsAndKeys:
       [NSString stringWithCString:sysname], @"hostName",
       @"None set", @"keyPath",
-      @"1d1s", @"ttl",
+      @"86401", @"ttl",
       [NSNumber numberWithBool:YES], @"useKey",
       nil]];
   free(sysname);

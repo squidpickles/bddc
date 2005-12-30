@@ -45,7 +45,7 @@
   }
   else
   {
-    [ttl setStringValue:@"1d1s"];
+    [ttl setStringValue:@"86401"];
   }
   value = CFPreferencesCopyAppValue(CFSTR("useKey"), appID);
   if (value)

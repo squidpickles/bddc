@@ -58,7 +58,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		EC3C2E6B063669400025658C /* Info-bddc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-bddc.plist"; sourceTree = "<group>"; };
-		EC3C2E6C063669400025658C /* bddc.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = bddc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3C2E6C063669400025658C /* bddc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bddc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3C2E7C063669400025658C /* Info-bddcPrefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-bddcPrefs.plist"; sourceTree = "<group>"; };
 		EC3C2E7D063669400025658C /* bddcPrefs.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bddcPrefs.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
 		F562AA1E036CA90701E8DF6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
