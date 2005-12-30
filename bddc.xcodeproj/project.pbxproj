@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC3C2E5B063669400025658C /* bddcUpdateController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5848270036FABF901E92FDE /* bddcUpdateController.h */; };
+		EC3C2E5C063669400025658C /* bddcStorageInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F584826E036FABF901E92FDE /* bddcStorageInterface.h */; };
+		EC3C2E5D063669400025658C /* bddcSCInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = F584826C036FABF901E92FDE /* bddcSCInterface.h */; };
+		EC3C2E5E063669400025658C /* bddcNSUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = F584826A036FABF901E92FDE /* bddcNSUpdater.h */; };
+		EC3C2E60063669400025658C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F572B86C036FAFB001E92FDE /* InfoPlist.strings */; };
+		EC3C2E62063669400025658C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5848272036FABF901E92FDE /* main.m */; };
+		EC3C2E63063669400025658C /* bddcUpdateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5848271036FABF901E92FDE /* bddcUpdateController.m */; };
+		EC3C2E64063669400025658C /* bddcStorageInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F584826F036FABF901E92FDE /* bddcStorageInterface.m */; };
+		EC3C2E65063669400025658C /* bddcSCInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F584826D036FABF901E92FDE /* bddcSCInterface.m */; };
+		EC3C2E66063669400025658C /* bddcNSUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = F584826B036FABF901E92FDE /* bddcNSUpdater.m */; };
+		EC3C2E68063669400025658C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		EC3C2E69063669400025658C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F562AA1E036CA90701E8DF6A /* SystemConfiguration.framework */; };
+		EC3C2E70063669400025658C /* bddcPrefPane.h in Headers */ = {isa = PBXBuildFile; fileRef = F584825D036FABAE01E92FDE /* bddcPrefPane.h */; };
+		EC3C2E72063669400025658C /* bddcPrefs.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F584825F036FABAE01E92FDE /* bddcPrefs.tiff */; };
+		EC3C2E73063669400025658C /* bddcPrefPane.nib in Resources */ = {isa = PBXBuildFile; fileRef = F5848261036FABAE01E92FDE /* bddcPrefPane.nib */; };
+		EC3C2E74063669400025658C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5848263036FABAE01E92FDE /* InfoPlist.strings */; };
+		EC3C2E76063669400025658C /* bddcPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = F584825E036FABAE01E92FDE /* bddcPrefPane.m */; };
+		EC3C2E78063669400025658C /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CD2E3C036F947D01E92FDE /* PreferencePanes.framework */; };
+		EC3C2E79063669400025658C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4A9504CCFFE6A4B311CA0CBA /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		EC3C2E6B063669400025658C /* Info-bddc.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-bddc.plist"; sourceTree = "<group>"; };
+		EC3C2E6C063669400025658C /* bddc.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = bddc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3C2E7C063669400025658C /* Info-bddcPrefs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-bddcPrefs.plist"; sourceTree = "<group>"; };
+		EC3C2E7D063669400025658C /* bddcPrefs.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bddcPrefs.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		F562AA1E036CA90701E8DF6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		F572B86D036FAFB001E92FDE /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = daemon/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F584825D036FABAE01E92FDE /* bddcPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bddcPrefPane.h; path = prefpane/bddcPrefPane.h; sourceTree = "<group>"; };
+		F584825E036FABAE01E92FDE /* bddcPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bddcPrefPane.m; path = prefpane/bddcPrefPane.m; sourceTree = "<group>"; };
+		F584825F036FABAE01E92FDE /* bddcPrefs.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = bddcPrefs.tiff; path = prefpane/bddcPrefs.tiff; sourceTree = "<group>"; };
+		F5848262036FABAE01E92FDE /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = bddcPrefPane.nib; sourceTree = "<group>"; };
+		F5848264036FABAE01E92FDE /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F584826A036FABF901E92FDE /* bddcNSUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bddcNSUpdater.h; path = daemon/bddcNSUpdater.h; sourceTree = "<group>"; };
+		F584826B036FABF901E92FDE /* bddcNSUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bddcNSUpdater.m; path = daemon/bddcNSUpdater.m; sourceTree = "<group>"; };
+		F584826C036FABF901E92FDE /* bddcSCInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bddcSCInterface.h; path = daemon/bddcSCInterface.h; sourceTree = "<group>"; };
+		F584826D036FABF901E92FDE /* bddcSCInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bddcSCInterface.m; path = daemon/bddcSCInterface.m; sourceTree = "<group>"; };
+		F584826E036FABF901E92FDE /* bddcStorageInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bddcStorageInterface.h; path = daemon/bddcStorageInterface.h; sourceTree = "<group>"; };
+		F584826F036FABF901E92FDE /* bddcStorageInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bddcStorageInterface.m; path = daemon/bddcStorageInterface.m; sourceTree = "<group>"; };
+		F5848270036FABF901E92FDE /* bddcUpdateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bddcUpdateController.h; path = daemon/bddcUpdateController.h; sourceTree = "<group>"; };
+		F5848271036FABF901E92FDE /* bddcUpdateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bddcUpdateController.m; path = daemon/bddcUpdateController.m; sourceTree = "<group>"; };
+		F5848272036FABF901E92FDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = daemon/main.m; sourceTree = "<group>"; };
+		F5CD2E3C036F947D01E92FDE /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC3C2E67063669400025658C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E68063669400025658C /* Cocoa.framework in Frameworks */,
+				EC3C2E69063669400025658C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3C2E77063669400025658C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E78063669400025658C /* PreferencePanes.framework in Frameworks */,
+				EC3C2E79063669400025658C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Daemon */ = {
+			isa = PBXGroup;
+			children = (
+				F5CD2E0E036F87D601E92FDE /* Headers */,
+				F5CD2E0D036F87AD01E92FDE /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				F5848259036FAAAD01E92FDE /* Resources */,
+			);
+			name = Daemon;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				F562AA1E036CA90701E8DF6A /* SystemConfiguration.framework */,
+				F5CD2E3C036F947D01E92FDE /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC3C2E6C063669400025658C /* bddc.app */,
+				EC3C2E7D063669400025658C /* bddcPrefs.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* bddc */ = {
+			isa = PBXGroup;
+			children = (
+				F5CD2E0C036F87A201E92FDE /* PrefPane */,
+				080E96DDFE201D6D7F000001 /* Daemon */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				EC3C2E6B063669400025658C /* Info-bddc.plist */,
+				EC3C2E7C063669400025658C /* Info-bddcPrefs.plist */,
+			);
+			name = bddc;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5848272036FABF901E92FDE /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5848259036FAAAD01E92FDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F572B86C036FAFB001E92FDE /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F584825A036FAAD201E92FDE /* Classes and Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F584825D036FABAE01E92FDE /* bddcPrefPane.h */,
+				F584825E036FABAE01E92FDE /* bddcPrefPane.m */,
+			);
+			name = "Classes and Headers";
+			sourceTree = "<group>";
+		};
+		F5CD2E0C036F87A201E92FDE /* PrefPane */ = {
+			isa = PBXGroup;
+			children = (
+				F584825A036FAAD201E92FDE /* Classes and Headers */,
+				F5CD2E0F036F885301E92FDE /* Resources */,
+			);
+			name = PrefPane;
+			sourceTree = "<group>";
+		};
+		F5CD2E0D036F87AD01E92FDE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F584826B036FABF901E92FDE /* bddcNSUpdater.m */,
+				F584826D036FABF901E92FDE /* bddcSCInterface.m */,
+				F584826F036FABF901E92FDE /* bddcStorageInterface.m */,
+				F5848271036FABF901E92FDE /* bddcUpdateController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F5CD2E0E036F87D601E92FDE /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F584826A036FABF901E92FDE /* bddcNSUpdater.h */,
+				F584826C036FABF901E92FDE /* bddcSCInterface.h */,
+				F584826E036FABF901E92FDE /* bddcStorageInterface.h */,
+				F5848270036FABF901E92FDE /* bddcUpdateController.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		F5CD2E0F036F885301E92FDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5848261036FABAE01E92FDE /* bddcPrefPane.nib */,
+				F5848263036FABAE01E92FDE /* InfoPlist.strings */,
+				F584825F036FABAE01E92FDE /* bddcPrefs.tiff */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EC3C2E5A063669400025658C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E5B063669400025658C /* bddcUpdateController.h in Headers */,
+				EC3C2E5C063669400025658C /* bddcStorageInterface.h in Headers */,
+				EC3C2E5D063669400025658C /* bddcSCInterface.h in Headers */,
+				EC3C2E5E063669400025658C /* bddcNSUpdater.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3C2E6F063669400025658C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E70063669400025658C /* bddcPrefPane.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EC3C2E59063669400025658C /* bddc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9E0782096553D3009BFC4A /* Build configuration list for PBXNativeTarget "bddc" */;
+			buildPhases = (
+				EC3C2E5A063669400025658C /* Headers */,
+				EC3C2E5F063669400025658C /* Resources */,
+				EC3C2E61063669400025658C /* Sources */,
+				EC3C2E67063669400025658C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddc__Upgraded_.plist";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = bddc;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			name = bddc;
+			productInstallPath = /usr/local/bin;
+			productName = bddc;
+			productReference = EC3C2E6C063669400025658C /* bddc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC3C2E6E063669400025658C /* bddcPrefs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC9E0786096553D3009BFC4A /* Build configuration list for PBXNativeTarget "bddcPrefs" */;
+			buildPhases = (
+				EC3C2E6F063669400025658C /* Headers */,
+				EC3C2E71063669400025658C /* Resources */,
+				EC3C2E75063669400025658C /* Sources */,
+				EC3C2E77063669400025658C /* Frameworks */,
+				EC3C2E7A063669400025658C /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddcPrefs__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bddcPrefs;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+			};
+			dependencies = (
+			);
+			name = bddcPrefs;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = bddcPrefs;
+			productReference = EC3C2E7D063669400025658C /* bddcPrefs.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EC9E078A096553D3009BFC4A /* Build configuration list for PBXProject "bddc" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA /* Development */,
+				4A9504CDFFE6A4B311CA0CBA /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* bddc */;
+			projectDirPath = "";
+			targets = (
+				EC3C2E59063669400025658C /* bddc */,
+				EC3C2E6E063669400025658C /* bddcPrefs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3C2E5F063669400025658C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E60063669400025658C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3C2E71063669400025658C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E72063669400025658C /* bddcPrefs.tiff in Resources */,
+				EC3C2E73063669400025658C /* bddcPrefPane.nib in Resources */,
+				EC3C2E74063669400025658C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		EC3C2E7A063669400025658C /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC3C2E61063669400025658C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E62063669400025658C /* main.m in Sources */,
+				EC3C2E63063669400025658C /* bddcUpdateController.m in Sources */,
+				EC3C2E64063669400025658C /* bddcStorageInterface.m in Sources */,
+				EC3C2E65063669400025658C /* bddcSCInterface.m in Sources */,
+				EC3C2E66063669400025658C /* bddcNSUpdater.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC3C2E75063669400025658C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3C2E76063669400025658C /* bddcPrefPane.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F572B86C036FAFB001E92FDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F572B86D036FAFB001E92FDE /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5848261036FABAE01E92FDE /* bddcPrefPane.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5848262036FABAE01E92FDE /* English */,
+			);
+			name = bddcPrefPane.nib;
+			path = prefpane/English.lproj;
+			sourceTree = "<group>";
+		};
+		F5848263036FABAE01E92FDE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5848264036FABAE01E92FDE /* English */,
+			);
+			name = InfoPlist.strings;
+			path = prefpane/English.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC9E0783096553D3009BFC4A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddc.plist";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = bddc;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		EC9E0784096553D3009BFC4A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddc.plist";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = bddc;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		EC9E0785096553D3009BFC4A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddc.plist";
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = bddc;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		EC9E0787096553D3009BFC4A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddcPrefs.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bddcPrefs;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		EC9E0788096553D3009BFC4A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddcPrefs.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bddcPrefs;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		EC9E0789096553D3009BFC4A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-bddcPrefs.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bddcPrefs;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Default;
+		};
+		EC9E078B096553D3009BFC4A /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		EC9E078C096553D3009BFC4A /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		EC9E078D096553D3009BFC4A /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC9E0782096553D3009BFC4A /* Build configuration list for PBXNativeTarget "bddc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9E0783096553D3009BFC4A /* Development */,
+				EC9E0784096553D3009BFC4A /* Deployment */,
+				EC9E0785096553D3009BFC4A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		EC9E0786096553D3009BFC4A /* Build configuration list for PBXNativeTarget "bddcPrefs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9E0787096553D3009BFC4A /* Development */,
+				EC9E0788096553D3009BFC4A /* Deployment */,
+				EC9E0789096553D3009BFC4A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		EC9E078A096553D3009BFC4A /* Build configuration list for PBXProject "bddc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9E078B096553D3009BFC4A /* Development */,
+				EC9E078C096553D3009BFC4A /* Deployment */,
+				EC9E078D096553D3009BFC4A /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
